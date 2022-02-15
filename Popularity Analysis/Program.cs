@@ -10,6 +10,9 @@
             if (scores[i] > scores[i + 1]) increasing = false;
             if (scores[i] < scores[i + 1]) decreasing = false;
         }
+        if (increasing == true) Console.WriteLine("Popularity Increasing!");
+        if (decreasing == true) Console.WriteLine("Popularity Decreasing!");
+        
         return increasing || decreasing;
     }
 
@@ -26,6 +29,9 @@
         {
             if (IdentifyTitles(movieRating)) Console.WriteLine("Title Identified and Separated.");
             else Console.WriteLine("Title Score Fluctuating");
+            Console.WriteLine("---");
         }
+
+
     }
 }
